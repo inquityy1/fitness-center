@@ -5,21 +5,25 @@
 }
 
 header {
+    margin: 0;
+    padding: 0;
     background-image: url(./img/header-background-1.jpg);
     background-repeat: no-repeat;
-    height: 50rem;
+    height: 35rem;
     width: cover;
+}
+
+#header .inline {
+    display: flex;
 }
 
 #header .logo {
     margin-left: 1.9rem;
     margin-top: 1.5rem;
-    margin-right: 0.5rem;
-    float: left;
 }
 
 #header .top-nav {
-    float: right;
+    margin-top: 4rem;
     margin-right: 4rem;
 }
 
@@ -27,7 +31,6 @@ header {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    display: inline-block;
     margin-right: 2rem;
 }
 
@@ -48,29 +51,37 @@ header {
 }
 
 #header .center {
-    color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 6rem;
+    color: white;
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#header .info {
-    position: absolute;
-    display: inline-flex;
-    margin-top: 12rem;
-    left: 15%;
+#info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11rem;
     height: 3rem;
     font-weight: 100;
 }
 
 #header .info-display {
-    display: inline-flex;
-    margin-left: 3rem;
+    display: flex;
     color: white;
+}
+
+#header .info-display p {
+    margin-right: 2rem;
 }
 
 #header .info-display p span {
     font-size: 3rem;
+}
+
+#header .info-display img:hover,
+#header .info-display img:active {
+    cursor: default;
 }

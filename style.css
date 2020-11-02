@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -9,22 +10,49 @@ header {
     background-origin: border-box;
     background-clip: border-box;
     height: 50rem;
+    width: 100%;
 }
 
-#top-nav .logo {
-    margin-left: 2rem;
-    margin-top: 2rem;
+#header .logo {
+    margin-left: 1.9rem;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    float: left;
 }
 
-#top-nav a {
+#header .top-nav {
+    float: right;
+    margin-right: 4rem;
+}
+
+#header a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     display: inline-block;
+    margin-right: 2rem;
 }
 
-#top-nav .border-right {
-    border-right: 1px solid white;
+#header img {
+    margin-right: 2rem;
+}
+
+#header .dropdown {
+    border-right: 2px solid white;
     margin-right: 0.5rem;
-    padding-right: 0.3rem;
+    margin-top: 4rem;
+    padding-right: 1rem;
+}
+
+#header img:hover,
+#header img:active {
+    cursor: pointer;
+}
+
+#header .center {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }

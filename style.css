@@ -8,7 +8,7 @@ header {
     background-image: url(./img/header-background-1.jpg);
     background-repeat: no-repeat;
     height: 50rem;
-    width: 100%;
+    width: cover;
 }
 
 #header .logo {
@@ -59,7 +59,7 @@ header {
 #header .info {
     position: absolute;
     display: inline-flex;
-    margin-top: 13rem;
+    margin-top: 12rem;
     left: 15%;
     height: 3rem;
     font-weight: 100;

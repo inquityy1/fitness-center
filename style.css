@@ -11,8 +11,20 @@ header {
     height: 50rem;
 }
 
-header a {
+#top-nav .logo {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#top-nav a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+#top-nav .border-right {
+    border-right: 1px solid white;
+    margin-right: 0.5rem;
+    padding-right: 0.3rem;
 }

@@ -13,6 +13,11 @@ header {
     width: cover;
 }
 
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 #header .inline {
     display: flex;
 }
@@ -28,10 +33,8 @@ header {
 }
 
 #header a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
     margin-right: 2rem;
+    color: white;
 }
 
 #header img {
@@ -84,4 +87,24 @@ header {
 #header .info-display img:hover,
 #header .info-display img:active {
     cursor: default;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3F3F3F;
+    height: 5rem;
+}
+
+#navbar a {
+    margin: 0.5rem;
+    padding: 1.7rem;
+    border-spacing: 15px;
+    color: white;
+}
+
+#navbar a:hover, 
+#navbar a:active {
+    border-bottom: 6px solid yellow;
 }

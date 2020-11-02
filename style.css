@@ -7,8 +7,6 @@
 header {
     background-image: url(./img/header-background-1.jpg);
     background-repeat: no-repeat;
-    background-origin: border-box;
-    background-clip: border-box;
     height: 50rem;
     width: 100%;
 }
@@ -52,7 +50,27 @@ header {
 #header .center {
     color: white;
     text-align: center;
+    margin-top: 6rem;
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+#header .info {
+    position: absolute;
+    display: inline-flex;
+    margin-top: 13rem;
+    left: 15%;
+    height: 3rem;
+    font-weight: 100;
+}
+
+#header .info-display {
+    display: inline-flex;
+    margin-left: 3rem;
+    color: white;
+}
+
+#header .info-display p span {
+    font-size: 3rem;
 }

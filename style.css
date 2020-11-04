@@ -7,10 +7,7 @@
 header {
     margin: 0;
     padding: 0;
-    background-image: url(./img/header-background-1.jpg);
-    background-repeat: no-repeat;
-    height: 35rem;
-    width: cover;
+    background: url("./img/header-background.jpg") center/cover no-repeat border-box;
 }
 
 a {
@@ -107,4 +104,13 @@ a {
 #navbar a:hover, 
 #navbar a:active {
     border-bottom: 6px solid yellow;
+}
+
+main #login img {
+    padding: 0;
+    margin: 0;
+    background-image: url(./img/login-backgroud.jpg);
+
+    height: 50vh;
+    width: 100%;
 }

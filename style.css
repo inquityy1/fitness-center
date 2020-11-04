@@ -112,7 +112,12 @@ a {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 50vh;
+}
+
+#login .login {
+    margin-left: 30%;
+    margin-top: 10rem;
 }
 
 #login .login-title {
@@ -123,5 +128,24 @@ a {
 
 #login .login-title h1 {
     margin-bottom: 1.5rem;
+}
 
+#login .login-fields {
+    margin: 1.5rem;
+}
+
+#login .login-fields input,
+#login .login-fields option,
+#login .login-fields select {
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    border: 2px solid yellow;
+    height: 3rem;
+    margin-left: 1.6rem;
+    width: 20rem;
+}
+
+#login .login-fields input::placeholder {
+    color: yellow;
 }

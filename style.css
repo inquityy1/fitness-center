@@ -89,6 +89,7 @@ a {
 
 #navbar {
     display: flex;
+    height: 5rem;
     justify-content: center;
     align-items: center;
     background: #3F3F3F;
@@ -139,7 +140,8 @@ a {
 
 #login .login-fields input,
 #login .login-fields option,
-#login .login-fields select {
+#login .login-fields select,
+#login .login-fields button {
     margin-left: 0;
     margin-right: 3rem;
     background-color: transparent;
@@ -163,6 +165,30 @@ a {
 
 #login .login-fields option {
     background: #333232;
+    border: 1px solid white;
+}
+
+#login .login-fields select:hover {
+    cursor: pointer;
+}
+
+#login .login .login-fields .time:hover {
+    cursor: pointer;
+}
+
+#login .login-fields button {
+    background-color: yellow;
+    color: gray;
+    border: none;
+    height: 3.6rem;
+    width: 20.3rem;
+}
+
+#login .login-fields button:hover,
+#login .login-fields button:active {
+    background-color: gray;
+    color: yellow;
+    cursor: pointer;
 }
 
 #login .login-fields input::placeholder {

@@ -5,6 +5,7 @@
 }
 
 header {
+    position: relative;
     margin: 0;
     padding: 0;
     background: url("./img/header-background.jpg") center/cover no-repeat border-box;
@@ -106,46 +107,65 @@ a {
 }
 
 #login {
-    padding: 60px 0 50px 0;
     margin: 0;
+    padding: 0;
     background-image: url(./img/login-backgroud.jpg);    
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
-}
-
-#login .login {
-    margin-left: 30%;
-    margin-top: 10rem;
+    height: 62vh;
 }
 
 #login .login-title {
     display: flex;
     flex-direction: column;
     color: whitesmoke;
+    padding-top: 4rem;
 }
 
 #login .login-title h1 {
     margin-bottom: 1.5rem;
 }
 
+#login .login {
+    margin-left: 20%;
+    margin-top: 6rem;
+}
+
 #login .login-fields {
-    margin: 1.5rem;
+    display: flex;
+    margin-top: 1.5rem;
 }
 
 #login .login-fields input,
 #login .login-fields option,
 #login .login-fields select {
+    margin-left: 0;
+    margin-right: 3rem;
     background-color: transparent;
     color: yellow;
     font-weight: bold;
     border: 2px solid yellow;
-    height: 3rem;
-    margin-left: 1.6rem;
+    height: 3.3rem;
     width: 20rem;
+}
+
+#login .login .login-fields .captcha {
+    width: 14rem;
+}
+
+#login .login-fields img {
+    margin: 0;
+    border: 2px solid yellow;
+    border-right: none;
+    height: 3.3rem;
+}
+
+#login .login-fields option {
+    background: #333232;
 }
 
 #login .login-fields input::placeholder {
     color: yellow;
+    padding-left: 10px;
 }

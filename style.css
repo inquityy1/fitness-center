@@ -218,11 +218,10 @@ footer {
     margin-left: 13rem;
 }
 
-#first-row .logo-footer1 .logo-footer p {
+#first-row .logo-footer1 .logo-footer h2 {
     cursor: default;
-    font-size: 1rem;
     color: yellow;
-    margin-left: 12rem;
+    margin-left: 11rem;
     margin-top: 3rem;
 }
 
@@ -233,15 +232,27 @@ footer {
 }
 
 #first-row .partner1 .partner img {
-    margin-top: 3rem;
+    margin-top: 5rem;
     height: 2rem;
 }
 
-#first-row .partner1 .partner p {
-    font-size: small;
+#first-row .partner1 .partner h5 {
     color: #E65118;
 }
 
 #first-row .folow-us {
+    margin-top: 3rem;
+    color: white;
+}
+
+#first-row .folow-us img {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#first-row .folow-us img:hover {
+    filter: grayscale(0);
 }
 

@@ -17,8 +17,6 @@ a {
 }
 
 footer {
-    margin: 0;
-    padding: 0;
     background-color: #292A2B;
     height: 78vh;
 }
@@ -115,6 +113,7 @@ footer {
 }
 
 #login {
+    position: relative;
     margin: 0;
     padding: 0;
     background-image: url(./img/login-backgroud.jpg);    
@@ -200,9 +199,49 @@ footer {
 
 #login .login-fields input::placeholder {
     color: yellow;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
 
-#footer {
+#first-row {
+    text-decoration: none;
     display: flex;
+    flex-direction: row;
 }
+
+#first-row .logo-footer1 .logo-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-row .logo-footer1 .logo-footer img {
+    margin-top: 2rem;
+    margin-left: 13rem;
+}
+
+#first-row .logo-footer1 .logo-footer p {
+    cursor: default;
+    font-size: 1rem;
+    color: yellow;
+    margin-left: 12rem;
+    margin-top: 3rem;
+}
+
+
+#first-row .partner1 .partner {
+    display: flex;
+    flex-direction: column;
+}
+
+#first-row .partner1 .partner img {
+    margin-top: 3rem;
+    height: 2rem;
+}
+
+#first-row .partner1 .partner p {
+    font-size: small;
+    color: #E65118;
+}
+
+#first-row .folow-us {
+}
+

@@ -16,6 +16,14 @@ a {
     text-transform: uppercase;
 }
 
+footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #292A2B;
+    height: 78vh;
+}
+
 #header .inline {
     display: flex;
 }
@@ -178,7 +186,7 @@ a {
 
 #login .login-fields button {
     background-color: yellow;
-    color: gray;
+    color: #292A2B;
     border: none;
     height: 3.6rem;
     width: 20.3rem;
@@ -186,7 +194,7 @@ a {
 
 #login .login-fields button:hover,
 #login .login-fields button:active {
-    background-color: gray;
+    background-color:#292A2B;
     color: yellow;
     cursor: pointer;
 }
@@ -195,3 +203,4 @@ a {
     color: yellow;
     padding-left: 10px;
 }
+

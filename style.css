@@ -18,7 +18,7 @@ a {
 
 footer {
     background-color: #292A2B;
-    height: 78vh;
+    height: 85vh;
 }
 
 #header .inline {
@@ -256,3 +256,53 @@ footer {
     filter: grayscale(0);
 }
 
+.map h2 {
+    display: flex;
+    margin-left: 18rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#second-row {
+    margin-top: 4rem;
+    padding: 0;
+}
+
+#second-row .lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 14rem;
+    font-size: 0.8rem;
+}
+
+#second-row .list {
+    margin: 0;
+    margin-left: 4rem;
+    list-style-type: none;
+}
+
+#second-row .list h2 {
+    color: #A7A7A7;
+}
+
+#second-row .list li {
+    margin-top: 0.6rem;
+    color: #969696;
+    list-style-type: none;
+}
+
+#third-row {
+    margin-top: 3rem;
+    margin-left: 18rem;
+}
+
+#third-row h3 {
+    color: white;
+}
+
+#third-row img {
+    margin: 1rem;
+}

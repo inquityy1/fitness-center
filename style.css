@@ -70,10 +70,6 @@ a {
     background-color: white;
 }
 
-.nav-links li img {
-    display: none;
-}
-
 .center {
     display: flex;
     justify-content: center;
@@ -84,10 +80,9 @@ a {
     font-weight: bold;
 }
 
-#info {
+#info .info-container {
     display: flex;
     justify-content: center;
-    height: 20vh;
     font-weight: 100;
 }
 
@@ -107,10 +102,10 @@ a {
 }
 
 #navbar {
-    height: 5rem;
     background: #3F3F3F;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #navbar a {
@@ -128,11 +123,10 @@ a {
 }
 
 main {
-    background-image: url(./img/login-backgroud.jpg);    
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(./img/login-backgroud.jpg);    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
 }
 
 #login {
@@ -322,4 +316,90 @@ footer {
 
 #third-row img {
     margin: 1rem;
+}
+
+/* media for header */
+
+@media screen and (min-width:1300px) {
+    .header-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-container {
+        border: none;
+    }
+    
+    .btn {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        list-style-type: none;
+        align-self: center;
+    }
+
+    .nav-links li a {
+        border: none;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width:720px) {
+    #info .info-container{
+        display: grid;
+    }
+
+    #info .info-display {
+        margin-bottom: 10px;
+    }
+
+    #info .info-display img,
+    #info .info-display p {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #info .info-display p span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .center {
+        font-size: 50px;
+    }
+}
+
+/* media for login */
+
+@media screen and (max-width:1135px) {
+    #login {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login-fields {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #login .login-fields input,
+    #login .login-fields option,
+    #login .login-fields select,
+    #login .login-fields button {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #login .login-fields .captcha {
+        display: flex;
+        justify-content: center;
+    }
+
+    #login .login-fields .captcha img {
+        margin-top: 40px;
+    }
 }

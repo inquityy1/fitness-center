@@ -123,37 +123,34 @@ a {
     border-bottom: 6px solid yellow
 }
 
-
-
 #navbar a:hover {
     border-bottom: 6px solid yellow;
 }
 
-#login {
-    position: relative;
-    margin: 0;
-    padding: 0;
+main {
     background-image: url(./img/login-backgroud.jpg);    
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 62vh;
+    height: 60vh;
+}
+
+#login {
+    display: grid;
+    grid-template-rows: 1fr 100px 100px 100px;
+    justify-content: center;
+
 }
 
 #login .login-title {
-    display: flex;
-    flex-direction: column;
     color: whitesmoke;
+    justify-content: center;
     padding-top: 4rem;
+    margin-bottom: 100px;
 }
 
 #login .login-title h1 {
     margin-bottom: 1.5rem;
-}
-
-#login .login {
-    margin-left: 20%;
-    margin-top: 6rem;
 }
 
 #login .login-fields {
@@ -165,7 +162,6 @@ a {
 #login .login-fields option,
 #login .login-fields select,
 #login .login-fields button {
-    margin-left: 0;
     margin-right: 3rem;
     background-color: transparent;
     color: yellow;
@@ -175,15 +171,18 @@ a {
     width: 20rem;
 }
 
-#login .login .login-fields .captcha {
-    width: 14rem;
-}
-
 #login .login-fields img {
-    margin: 0;
     border: 2px solid yellow;
     border-right: none;
     height: 3.3rem;
+}
+
+#login .login-fields .captcha {
+    display: flex;
+}
+
+#login .login-fields .captcha input {
+    width: 230px;
 }
 
 #login .login-fields option {
@@ -204,11 +203,9 @@ a {
     color: #292A2B;
     border: none;
     height: 3.6rem;
-    width: 20.3rem;
 }
 
-#login .login-fields button:hover,
-#login .login-fields button:active {
+#login .login-fields button:hover {
     background-color:#292A2B;
     color: yellow;
     cursor: pointer;
@@ -221,32 +218,30 @@ a {
 
 footer {
     background-color: #292A2B;
-    height: 85vh;
+}
+
+#footer {
+    display: grid;
+    grid-template-rows: 1fr 400px 200px;
+    justify-content: center;
 }
 
 #first-row {
     text-decoration: none;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
 }
 
-#first-row .logo-footer1 .logo-footer{
-    display: flex;
-    flex-direction: column;
-}
-
-#first-row .logo-footer1 .logo-footer img {
-    margin-top: 2rem;
-    margin-left: 13rem;
-}
-
-#first-row .logo-footer1 .logo-footer h2 {
+#first-row .logo-footer1 h2 {
     cursor: default;
     color: yellow;
-    margin-left: 11rem;
-    margin-top: 3rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
 }
 
+#first-row .logo-footer1 img {
+    margin-top: 20px;
+}
 
 #first-row .partner1 .partner {
     display: flex;

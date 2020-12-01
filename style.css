@@ -214,6 +214,10 @@ footer {
     background-color: #292A2B;
 }
 
+.small-screen {
+    display: none;
+}
+
 #footer {
     display: grid;
     grid-template-rows: 1fr 400px 200px;
@@ -269,11 +273,11 @@ footer {
 
 .map h2 {
     display: flex;
-    margin-left: 18rem;
     margin-bottom: 3rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
+    margin-left: 4rem;
 }
 
 #second-row {
@@ -283,14 +287,11 @@ footer {
 
 #second-row .lists {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 14rem;
     font-size: 0.8rem;
 }
 
 #second-row .list {
-    margin: 0;
     margin-left: 4rem;
     list-style-type: none;
 }
@@ -306,8 +307,8 @@ footer {
 }
 
 #third-row {
-    margin-top: 3rem;
-    margin-left: 18rem;
+    display: flex;
+    justify-content: center;
 }
 
 #third-row h3 {
@@ -401,5 +402,72 @@ footer {
 
     #login .login-fields .captcha img {
         margin-top: 40px;
+    }
+}
+
+/* media for footer */
+
+@media screen and (max-width:1070px) {
+    .map h2 {
+        font-size: 20px;
+    }
+   
+    #second-row .lists {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:884px) {
+    .small-screen {
+        display: flex;
+    }
+
+    .small-screen ul {
+        background: gray;
+        width: 100vw;
+    }
+
+    .small-screen li {
+        display: flex;
+        padding: 20px;
+        list-style-type: none;
+        text-transform: uppercase;
+        color: white;
+        border-top: 2px solid white;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .small-screen li:hover {
+        border-bottom: 2px solid yellow;
+    }
+    
+    #second-row {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .map h2 {
+        padding: 10px;
+    }
+
+    #second-row .lists {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 230px;
+    }
+
+    #second-row .lists h2 {
+        padding: 10px;
+    }
+    
+    #second-row .lists ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width:780px) {
+    #third-row .friends img {
+        width: 50px;
     }
 }

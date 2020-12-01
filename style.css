@@ -1,14 +1,15 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background: url("./img/header-background.jpg") center/cover no-repeat border-box;
+    background: url("./img/header-background.jpg") center/cover no-repeat;
 }
 
 a {
@@ -16,47 +17,64 @@ a {
     text-transform: uppercase;
 }
 
-footer {
-    background-color: #292A2B;
-    height: 85vh;
-}
-
-#header .inline {
+.nav-container {
     display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid red;
 }
 
-#header .logo {
-    margin-left: 1.9rem;
-    margin-top: 1.5rem;
+.bar1,
+.bar2,
+.bar3 {
+	width: 35px;
+	height: 4px;
+	margin: 5px;
+	background: #a3a8ac;
+	transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-#header .top-nav {
-    margin-top: 4rem;
-    margin-right: 4rem;
+.btn {
+	padding: 2px;
+	display: inline-block;
+	cursor: pointer;
+	align-self: center;
 }
 
-#header a {
-    margin-right: 2rem;
+.change .bar1 {
+	transform: rotate(-45deg) translate(-7px,6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: rotate(45deg) translate(-7px,-8px);
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li a {
     color: white;
+    display: block;
+    padding: 15px;
+    border-top: 1px solid white;
+    background-color: gray;
+    transition: color 0.5s ease, background-color 2s ease;
 }
 
-#header img {
-    margin-right: 2rem;
+.nav-links li a:hover {
+    color: gray;
+    background-color: white;
 }
 
-#header .dropdown {
-    border-right: 2px solid white;
-    margin-right: 0.5rem;
-    margin-top: 4rem;
-    padding-right: 1rem;
+.nav-links li img {
+    display: none;
 }
 
-#header img:hover,
-#header img:active {
-    cursor: pointer;
-}
-
-#header .center {
+.center {
     display: flex;
     justify-content: center;
     margin-top: 6rem;
@@ -68,28 +86,24 @@ footer {
 
 #info {
     display: flex;
-    flex-direction: row;
-    margin-top: 15rem;
-    height: 3rem;
+    justify-content: center;
+    height: 20vh;
     font-weight: 100;
+}
+
+#info img {
+    height: 50px;
 }
 
 #info .info-display {
     display: flex;
     color: white;
-}
-
-#info .info-display p {
     margin-right: 2rem;
+    align-self: flex-end;
 }
 
 #info .info-display p span {
     font-size: 3rem;
-}
-
-#info .info-display img:hover,
-#info .info-display img:active {
-    cursor: default;
 }
 
 #navbar {
@@ -200,6 +214,11 @@ footer {
 #login .login-fields input::placeholder {
     color: yellow;
     padding-left: 1rem;
+}
+
+footer {
+    background-color: #292A2B;
+    height: 85vh;
 }
 
 #first-row {

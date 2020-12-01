@@ -14,55 +14,66 @@
 </head>
 <body>
     <header>
-        <div id=header>   
-            <div class="inline">
-                <div class="logo">
-                    <a href=""><img src="./img/logo.svg" alt="logo"></a>
-                </div>
-                <div class="top-nav">
-                    <a href="" class="dropdown">banovo brdoa</a>
-                    <img src="./img/menu-arrow.png">
+        <nav class="header-nav">
+			<div class="nav-container">
+				<img src="img/logo.svg" alt="">
+				<div class="btn">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			
+			<ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li>
+                    <a href="" class="dropdown">banovo brdoa<img src="./img/menu-arrow.png"></a>
+                </li>
+                <li>
+                    <a href="" class="dropdown">vidikovac<img src="./img/menu-arrow.png"></a>
+                </li>
+                <li>
+                    <a href="" class="dropdown">crveni krst<img src="./img/menu-arrow.png"></a>
+                </li>
+                <li>
+                    <a href="" class="dropdown">vozdovac<img src="./img/menu-arrow.png"></a>
+                </li>
+                <li><a href="">Programs</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+			</ul>
+        </nav>
 
-                    <a href="" class="dropdown">vidikovac</a>
-                    <img src="./img/menu-arrow.png">
+        <div>
+            <h1 class="center">banovo brdo</h1>
+        </div>
 
-                    <a href="" class="dropdown">crveni krst</a>
-                    <img src="./img/menu-arrow.png">
-
-                    <a href="" class="dropdown">vozdovac</a>
-                    <img src="./img/menu-arrow.png">
-
-                    <a href="">Programs</a>
-                    <a href="">About Us</a>
-                    <a href="">Contact</a>
-                </div>
+        <div id="info">
+            <div class="info-display">
+                <img src="./img/facts-2.png">
+                <p><span>17</span>cardio</p>
             </div>
-            <p class="center">banovo brdo</p>
-            <div id="info">
-                <div class="info-display">
-                     <img src="./img/facts-2.png">
-                     <p>
-                        <span>17</span>cardio
-                    </p>
 
-                    <img src="./img/facts-3.png">
-                    <p>
-                        <span>40</span>TechnoGym
-                    </p>
+            <div class="info-display">
+                <img src="./img/facts-3.png">
+                <p><span>40</span>TechnoGym</p>
+            </div>
 
-                    <img src="./img/facts-4.png">
-                    <p>
-                        <span>5</span>fitness
-                    </p>
+            <div class="info-display">
+                <img src="./img/facts-4.png">
+                <p><span>5</span>fitness</p>
+            </div>
 
-                    <img src="./img/facts-5.svg">
-                    <p>
-                        <span>9</span>coach's
-                    </p>
-                </div>
+            <div class="info-display">
+                <img src="./img/facts-5.svg">
+                <p><span>9</span>coach's</p>
             </div>
         </div>
     </header>
+
     <main>
         <div id="navbar">
             <a href="" style="border-bottom: 6px solid yellow;">about club</a>
@@ -211,5 +222,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- main js -->
+	<script src="script.js"></script>
 </body>
 </html>

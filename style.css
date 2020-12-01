@@ -107,22 +107,25 @@ a {
 }
 
 #navbar {
-    display: flex;
     height: 5rem;
-    justify-content: center;
-    align-items: center;
     background: #3F3F3F;
+    display: flex;
+    justify-content: center;
 }
 
 #navbar a {
-    margin: 0.5rem;
-    padding: 1.7rem;
-    border-spacing: 15px;
+    padding: 10px;
     color: white;
+    margin-top: 15px;
 }
 
-#navbar a:hover, 
-#navbar a:active {
+#navbar .active {
+    border-bottom: 6px solid yellow
+}
+
+
+
+#navbar a:hover {
     border-bottom: 6px solid yellow;
 }
 
